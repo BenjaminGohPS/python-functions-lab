@@ -51,8 +51,8 @@ def simple_interest(principal, rate, time):
 # Define your function and call it to display the discounted price.
 
 def apply_discount(price, discount):
-    priceAfter = price * (1 - (discount / 100))
-    return int(priceAfter)
+    price_after = price * (1 - (discount / 100))
+    return int(price_after)
 
 # print('Exercise 3:', apply_discount(100, 25))
 # print('Exercise 3:', apply_discount(80, 10))
@@ -79,5 +79,25 @@ def convert_temperature(temp, unit):
         return ((temp - 32) * 5/9) 
 
 
-print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
-print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
+# print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
+# print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
+
+
+# Exercise 5: Sum to N
+#
+# Write a function named `sum_to` that takes a single integer n and returns the sum of all integers from 1 to n.
+#
+# Examples:
+# sum_to(6) should return 21.
+# sum_to(10) should return 55.
+#
+# Define the function and then call it below.
+
+def sum_to(n):
+   
+    return sum(range(n+1))    
+
+
+print('Exercise 5:', sum_to(6))
+print('Exercise 5:', sum_to(10))
+
